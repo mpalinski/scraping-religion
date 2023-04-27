@@ -22,4 +22,8 @@
 # Known issues
 - gosc.pl: nie zbieramy "Relacji na żywo", ale zachowujemy linki
 - niedziela.pl: nie zbieramy "dat dodania", które są niekonsektwentnie umieszczane; zbieramy za to info o numerze wydania (z rokiem i miesiącem) dla artykułów z e-wydania niedzieli
-- tygodnikpowszechny.pl: wymagane logowanie, rozwiązanie CAPTCHA, zapisanie cookies z identyfikatorem sesji, wgranie cookies do webdrivera
+- tygodnikpowszechny.pl: 
+    - wymagane logowanie, rozwiązanie CAPTCHA, zapisanie cookies z identyfikatorem sesji, wgranie cookies do webdrivera
+    - pierwszy artykuł z wyszukiwania ma ucięty tekst (cookies issue)
+    - API traktuje słowa wyszukiwania jako exact match, czyli wyszukiwanie "wirus" nie znajdzie "wirusa", "wirusem" etc. 
+
