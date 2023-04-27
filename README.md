@@ -2,9 +2,9 @@
 ```
 ├── README.md
 ├── data
-│   ├── arts
+│   ├── arts [scraped articles]
 │   │   ├── ... [csv, xlsx]
-│   └── links 
+│   └── links [scraped links to articles]
 │       └── ... [csv]
 ├── requirements.txt [required packages]
 └── scripts [scraping articles using Selenium]
@@ -22,3 +22,4 @@
 # Known issues
 - gosc.pl: nie zbieramy "Relacji na żywo", ale zachowujemy linki
 - niedziela.pl: nie zbieramy "dat dodania", które są niekonsektwentnie umieszczane; zbieramy za to info o numerze wydania (z rokiem i miesiącem) dla artykułów z e-wydania niedzieli
+- tygodnikpowszechny.pl: wymagane logowanie, rozwiązanie CAPTCHA, zapisanie cookies z identyfikatorem sesji, wgranie cookies do webdrivera
