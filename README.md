@@ -13,7 +13,8 @@
     └── py [working scripts]
         ├── gosc.py
         ├── niedziela.py
-        └── tp.py
+        ├── tp.py
+        └── jw.py
 ```
 
 # Quick start
@@ -26,4 +27,5 @@
     - wymagane logowanie, rozwiązanie CAPTCHA, zapisanie cookies z identyfikatorem sesji, wgranie cookies do webdrivera
     - pierwszy artykuł z wyszukiwania ma ucięty tekst (cookies issue)
     - API traktuje słowa wyszukiwania jako exact match, czyli wyszukiwanie "wirus" nie znajdzie "wirusa", "wirusem" etc. 
+- jw.org/pl: dwa typy artykułów - w domenie i poddomenie (wol.jw.org), pierwsze mają ustrukturyzowaną datę (kolumna added), ale nie zawsze jest podana; drugie nie mają ustrukturyzowanego miejsca na datę, czasem pada ona w tekście lub tytule. Uwaga: zdarzają się tu teksty z lat 90. np. o wirusie AIDS.
 
