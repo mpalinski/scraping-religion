@@ -126,7 +126,6 @@ def get_articles(links, query):
             except:
                 added.append(np.nan)
                 
-        
     # articles to df
     df=pd.DataFrame({'title':titles, 'txt':txts, 'added':added, 'links':workingLinks})
     df.to_csv(f'data/arts/jw_{query}.csv', index=False)

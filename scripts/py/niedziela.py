@@ -107,7 +107,6 @@ def get_articles(links, query):
             tags.append(np.nan)
         sleep(2)
 
-
     # articles to df
     df=pd.DataFrame({'title':titles, 'leads':leads, 'txt':txts, 'auth':auths, 'edition':edition, 'tags':tags, 'links':links})
     df.to_csv(f'data/arts/niedziela_{query}.csv', index=False)
